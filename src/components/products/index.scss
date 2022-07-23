@@ -46,7 +46,7 @@
     border-radius: 15px;
     padding: 21px 18px 43px 24px;
     position: relative;
-    margin: 0px 15px;
+    // margin: 0px 15px;
     cursor: pointer;
     transform: scale(0.89);
     transition: 0.3s ease;
@@ -64,7 +64,6 @@
     .product_btn > img {
         content:url("../../assets/icons/hovermarketpng.png"); 
     }
-
 }
 
 .slider-list {
