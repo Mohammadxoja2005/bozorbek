@@ -1,0 +1,614 @@
+.footer {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    width: 91%;
+    align-items: start;
+    margin: auto;
+    justify-content: space-between;
+    // border: 2px solid red;
+}  
+
+.findsocial {
+    font-family: gothampro_bold;
+    font-weight: bold;
+    font-size: 18px;
+    color: #42445A;
+    margin-bottom: 20px;
+}
+
+#all > h3 {
+    margin-bottom: 20px;
+    color: #42445A;
+} 
+
+#all > a {
+    margin-bottom: 20px;
+} 
+
+#all > p {
+    margin-bottom: 25px;
+}
+
+.footer_question > h2 {
+    font-size: 50px;
+    font-family: gothampro_bold;
+    font-weight: 700;
+    color: #00EA5D;
+    text-transform: capitalize; 
+    margin-bottom: 45px;
+    line-height: 0.4;
+} 
+
+.footer_question > p {
+    font-family: gothampro;
+    font-weight: 400; 
+    font-size: 20px;
+    color: #42445A; 
+    margin-bottom: 44px;
+    max-width: 269px;
+} 
+.mobileappregister {
+    font-family: gothampro;
+    font-style: bold;
+    font-size: 18px;
+    color: #42445A; 
+    margin-bottom: 27px;
+} 
+
+.footer_stores {
+    display: flex;
+    margin-bottom: 74px;
+}
+
+.market_store {
+    padding: 7px 13px;
+    display: flex;
+    align-items: center;
+    background-color: #EEF3F9;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 35px; 
+    cursor: pointer; 
+    // margin-top: 27px;
+    // margin-bottom: 74px;
+}   
+
+.footer_elements {
+    width: 91%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.social {
+    margin-right: 47px;
+}
+
+.market {
+    color: #42445A;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: gothampro; 
+}
+
+.pos {
+    display: flex;
+    flex-direction: column;
+    color: #42445A;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: gothampro;
+    margin-left: 10px;
+} 
+
+.company {
+    display: flex;
+    flex-direction: column;
+} 
+
+.company > h3 {
+    font-family: gothampro;
+    font-size: 22px;
+    font-weight: 700;
+} 
+
+.company > a {
+    font-family: gothampro;
+    font-size: 20px;
+    color: #42445A;
+    // margin: 10px 0; 
+    text-decoration: none;
+}
+
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+} 
+
+.footer_contact > h5 {
+    font-family: gothampro;
+    font-size: 19px;
+    font-weight: 400;
+    // margin-bottom: 14px;
+    color: #42445A ;
+    margin-bottom: 20px;
+}
+
+.footer_contact > h3 {
+    font-family: gothampro;
+    font-size: 22px;
+    font-weight: 700;
+} 
+
+.footer_contact > a {
+    font-family: gothampro;
+    font-size: 20px;
+    color: #42445A;
+    // margin: 10px 0; 
+    text-decoration: none;
+} 
+
+.politics_information {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: gothampro;
+    color: #42445A;
+} 
+
+.footer_hot_line {
+    display: flex;
+    flex-direction: column;
+}  
+
+.footer_hot_line > h3 {
+    font-family: gothampro;
+    font-size: 22px;
+    font-weight: 700;
+    // margin-bottom: 25px;
+} 
+
+.footer_hot_line > p {
+    font-family: gothampro;
+    font-size: 15px;
+    font-weight: 400;
+    color: #42445A;
+    // margin-bottom: 25px;
+}  
+
+.footer_hot_line > h5 {
+    font-family: gothampro;
+    font-size: 19px;
+    font-weight: 400;
+    // margin-bottom: 79px;
+    // margin-bottom: 14px;
+    color: #42445A ;
+} 
+
+// .social {
+//     margin-top: 79px;
+// }
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+} 
+
+.footer_social > .footer_icon {
+    margin-left: 20px;
+    cursor: pointer;
+} 
+
+.footer_social > .footer_icon:first-child {
+    margin-left: 0;
+    cursor: pointer;
+} 
+
+
+@media screen and (max-width: 1200px) {
+   .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "footer_question company"
+    "footer_contact footer_hot_line"; 
+   } 
+
+   .footer_question {
+    grid-area: footer_question;
+   }
+
+   .company {
+    grid-area: company;
+    } 
+
+    .footer_contact {
+        grid-area: footer_contact;
+    } 
+   
+    .footer_hot_line {
+        grid-area: footer_hot_line;
+    } 
+
+    .footer_hot_line > h5 {
+        margin-bottom: 79px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        gap: 20px; 
+        margin-bottom: 22px;
+        grid-template-areas: 
+        "footer_question" 
+        "company" 
+        "footer_contact"  
+        "footer_hot_line"; 
+       } 
+    
+       .footer_question {
+        grid-area: footer_question;
+       }
+    
+       .company {
+        grid-area: company;
+        } 
+    
+        .footer_contact {
+            grid-area: footer_contact;
+        } 
+       
+        .footer_hot_line {
+            grid-area: footer_hot_line;
+        }
+} 
+
+@media screen and (max-width: 576px) {
+    .pos {
+        font-size: 12px;
+    }  
+
+    .market {
+        font-size: 14px;
+    } 
+
+    .market_store {
+        padding: 7px 5px;
+    } 
+
+    .footer a {
+        font-size: 16px;
+    } 
+
+    .footer  h3{
+        font-size: 18px;
+    }
+    
+    .footer_question > p {
+        font-size: 16px;
+    } 
+
+    .footer  h4 {
+        font-size: 16px;
+    }  
+
+    .footer  h5 {
+        font-size: 18px;
+    } 
+}
+
+
+//  for smaller width ///////////////////////////////////////////////////////////////////////////////////////
+
+// .footer {
+//     display: flex;
+//     width: 91%;
+//     align-items: start;
+//     // justify-content: space-around;
+// }
+
+// #all > h3 {
+//     margin-bottom: 20px;
+//     color: #42445A;
+// } 
+
+// #all > a {
+//     margin-bottom: 20px;
+// } 
+
+// #all > p {
+//     margin-bottom: 25px;
+// }
+
+// .footer_question {
+//     flex: 37%; 
+// } 
+
+// .company {
+//     flex: 20%;
+// } 
+
+// .footer_contact {
+//     flex: 20%;
+// } 
+
+// .footer_hot_line {
+//     flex: 20%;
+// }
+
+// .footer_question > h2 {
+//     font-size: 50px;
+//     font-family: gothampro_bold;
+//     font-weight: 700;
+//     color: #00EA5D;
+//     text-transform: capitalize; 
+//     margin-bottom: 28px;
+// } 
+
+// .footer_question > p {
+//     font-family: gothampro;
+//     font-weight: 400; 
+//     font-size: 22px;
+//     color: #42445A; 
+//     margin-bottom: 44px;
+//     width: 61%;
+// } 
+// .mobileappregister {
+//     font-family: gothampro;
+//     font-style: bold;
+//     font-size: 18px;
+//     color: #42445A; 
+//     margin-bottom: 27px;
+// } 
+
+// .mobileapp {
+//     flex: start;
+// }
+
+// .footer_stores {
+//     display: flex;
+//     margin-bottom: 74px;
+// }
+
+// .market_store {
+//     padding: 7px 13px;
+//     display: flex;
+//     align-items: center;
+//     background-color: #EEF3F9;
+//     margin-right: 10px;
+//     border-radius: 6px;
+//     font-size: 35px; 
+//     cursor: pointer; 
+//     // margin-top: 27px;
+//     // margin-bottom: 74px;
+// } 
+
+// .market {
+//     color: #42445A;
+//     font-size: 18px;
+//     font-weight: 400;
+//     font-family: gothampro; 
+// }
+
+// .pos {
+//     display: flex;
+//     flex-direction: column;
+//     color: #42445A;
+//     font-size: 15px;
+//     font-weight: 400;
+//     font-family: gothampro;
+//     margin-left: 10px;
+// } 
+
+// .company {
+//     display: flex;
+//     flex-direction: column;
+// } 
+
+// .company > h3 {
+//     font-family: gothampro;
+//     font-size: 22px;
+//     font-weight: 700;
+// } 
+
+// .company > a {
+//     font-family: gothampro;
+//     font-size: 20px;
+//     color: #42445A;
+//     // margin: 10px 0; 
+//     text-decoration: none;
+// }
+
+
+// .footer_contact {
+//     display: flex;
+//     flex-direction: column;
+// } 
+
+// .footer_contact > h5 {
+//     font-family: gothampro;
+//     font-size: 19px;
+//     font-weight: 400;
+//     // margin-bottom: 14px;
+//     color: #42445A ;
+//     margin-bottom: 20px;
+// }
+
+// .footer_contact > h3 {
+//     font-family: gothampro;
+//     font-size: 22px;
+//     font-weight: 700;
+// } 
+
+// .footer_contact > a {
+//     font-family: gothampro;
+//     font-size: 20px;
+//     color: #42445A;
+//     // margin: 10px 0; 
+//     text-decoration: none;
+// } 
+
+// .politics_information {
+//     font-size: 20px;
+//     font-weight: 700;
+//     font-family: gothampro;
+//     color: #42445A;
+// } 
+
+// .footer_hot_line {
+//     display: flex;
+//     flex-direction: column;
+// }  
+
+// .footer_hot_line > h3 {
+//     font-family: gothampro;
+//     font-size: 22px;
+//     font-weight: 700;
+//     // margin-bottom: 25px;
+// } 
+
+// .footer_hot_line > p {
+//     font-family: gothampro;
+//     font-size: 15px;
+//     font-weight: 400;
+//     color: #42445A;
+//     // margin-bottom: 25px;
+// } 
+
+// .footer_hot_line > h5 {
+//     font-family: gothampro;
+//     font-size: 19px;
+//     font-weight: 400;
+//     margin-bottom: 79px;
+//     // margin-bottom: 14px;
+//     color: #42445A ;
+// } 
+
+// .footer_hot_line > h4 {
+//     font-family: gothampro_bold;
+//     font-weight: bold;
+//     font-size: 18px;
+//     color: #42445A;
+//     margin-bottom: 20px;
+// }  
+
+// .footer_social {
+//     display: flex;
+//     align-items: center;
+//     font-size: 30px;
+// } 
+
+// .footer_social > .footer_icon {
+//     margin-left: 20px;
+//     cursor: pointer;
+// } 
+
+// .footer_social > .footer_icon:first-child {
+//     margin-left: 0;
+//     cursor: pointer;
+// } 
+
+
+// @media screen and (max-width: 1200px) {
+//    .footer {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 1fr 1fr; 
+//     grid-template-areas: 
+//     "footer_question company"
+//     "footer_contact footer_hot_line"; 
+//    } 
+
+//    .footer_question {
+//     grid-area: footer_question;
+//    }
+
+//    .company {
+//     grid-area: company;
+//     } 
+
+//     .footer_contact {
+//         grid-area: footer_contact;
+//     } 
+   
+//     .footer_hot_line {
+//         grid-area: footer_hot_line;
+//     }
+// } 
+
+// @media screen and (max-width: 768px) {
+//     .footer {
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 4fr;
+//         gap: 20px; 
+//         margin-bottom: 22px;
+//         grid-template-areas: 
+//         "footer_question" 
+//         "company" 
+//         "footer_contact"  
+//         "footer_hot_line"; 
+//        } 
+    
+//        .footer_question {
+//         grid-area: footer_question;
+//        }
+    
+//        .company {
+//         grid-area: company;
+//         } 
+    
+//         .footer_contact {
+//             grid-area: footer_contact;
+//         } 
+       
+//         .footer_hot_line {
+//             grid-area: footer_hot_line;
+//         }
+// } 
+
+// @media screen and (max-width: 576px) {
+//     .pos {
+//         font-size: 12px;
+//     }  
+
+//     .market {
+//         font-size: 14px;
+//     } 
+
+//     .market_store {
+//         padding: 7px 5px;
+//     } 
+
+//     .footer a {
+//         font-size: 16px;
+//     } 
+
+//     .footer  h3{
+//         font-size: 18px;
+//     }
+    
+//     .footer_question > p {
+//         font-size: 16px;
+//     } 
+
+//     .footer  h4 {
+//         font-size: 16px;
+//     }  
+
+//     .footer  h5 {
+//         font-size: 18px;
+//     } 
+// }
+
+
+
+
+
+

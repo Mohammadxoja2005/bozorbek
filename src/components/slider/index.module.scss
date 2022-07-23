@@ -1,0 +1,37 @@
+.imgSlider{
+    // background-position: right;
+    object-fit: cover; 
+    border-radius: 10px;
+    width: 100%; 
+} 
+
+.slider-list {
+    gap: 10px !important;
+}
+
+.slider_next_btn {
+    display: none;
+} 
+
+
+.slider_prev_btn {
+    display: none;
+} 
+
+.slider_dots {
+    margin-bottom: 40px;
+    svg {
+        transform: scale(2);
+        margin: 0px 6px;
+    } 
+
+} 
+
+@media screen and (max-width: 576px) {
+    .imgSlider {
+        width: 96%;
+        border-radius: 0;
+        margin-left: 8px;
+        border-radius: 10px;
+    }
+}
