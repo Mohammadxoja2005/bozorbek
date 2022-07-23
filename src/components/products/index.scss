@@ -39,12 +39,13 @@
 .product_description {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     background-color: #B3E7DB;
     border-radius: 15px;
-    padding: 21px 18px 43px 24px;
+    // padding: 21px 18px 43px 24px;
+    padding: 27px 18px 55px 24px;
     position: relative;
     // margin: 0px 15px;
     cursor: pointer;
